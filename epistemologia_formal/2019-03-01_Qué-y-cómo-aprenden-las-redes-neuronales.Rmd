@@ -1,0 +1,132 @@
+---
+title: "Qué y cómo aprenden las máquinas"
+author: "Sebastian Castillo"
+date: "6 de diciembre de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduccion
+
+Para este análisis voy a emplear un ejemplo clásico de implementación de un algoritmo de clasificación explicado en *Deep Learning with R*, Chollet-Allaire, 2017. Este algoritmo construye una *red neuronal* para clasificar imágenes de números enteros de un dígito en su correspondiente categoría 0 a 9. El data set de *entrenamiento* de la red es de 60000 imágenes y el de prueba (para determinar la exactitud de las predicciones) es de 10000. Esta base de datos fue recopilada por el Instituto Nacional de Estándares y Tecnología de Estados Unidos, y forma parte del paquete Keras disponible en R. 
+
+# Habilitando el data set de entrenamiento y de testeo
+
+```{r, results='hide', message=FALSE}
+library(keras)
+library(dplyr)
+
+mnist <- dataset_mnist()
+train_images <- mnist$train$x
+train_labels <- mnist$train$y
+test_images <- mnist$test$x
+test_labels <- mnist$test$y
+```
+
+Algo de exploración de los objetos:
+
+```{r}
+
+# Explorando el array
+str(train_images)
+
+# Explorando un elemento
+digit <- train_images[5,,]
+
+plot(as.raster(digit, max = 255))
+
+```
+
+```{r}
+str(train_labels)
+```
+
+```{r}
+str(test_images)
+```
+
+```{r}
+str(test_labels)
+```
+
+# Construyendo la Red Neuronal
+
+Esta implementación en dos capas (*layers*) densamente conectadas, con una capa final que organiza las salidas de la red en 10 categorías.
+
+```{r}
+
+# network of two layers densely connected
+
+network <- keras_model_sequential() %>% 
+  layer_dense(units = 512, activation = "relu", input_shape = c(28 * 28)) %>% #
+  layer_dense(units = 10, activation = "softmax")
+```
+
+Chollet-Allaire explican que las redes neuronales tienen como elemento fundamental para el procesamiento de datos a las "capas" o "estratos" que filtran los datos de entrada de tal manera de generar salidas útiles para responder a un problema particular. En el caso bajo estudio las capas generan *representaciones* de los datos que resultan útiles para la tarea de clasificación. En líneas generales la mayoría de las técnicas de *deep learning* (aprendizaje profundo) consisten en el encadenamiento de múltiples capas, cada una simple en su tarea de procesamiento o producción de representación, que progresivamente transforman la entrada en un tipo particular de salida. 
+
+Otros componentes elementales de una Red Neuronal son:
+
++ *función de pérdida (loss function)*  que mide la calidad de la predicción permitiendo a la red ajustar sus parámetros para mejorar su desempeño. Esta función *cuantifica que tan triste vas a estar*  -dice Liang- *si utilizas la función W para predecir x cuando la respuesta correcta es y.* Por eso debemos buscar minimizar su resultado (link a las diapositivas de Liang en el curso de IA de Stanford [aquí](https://web.stanford.edu/class/cs221/lectures/learning1.pdf)).
+
++ *un optimizador* mecanismo que permite a la red actualizarse considerando el dato que tiene para clasificar y el resultado obtenido de la función de pérdida.  
+
++ *medida de desempeño de la red* en este caso es la exactitud (accuracy) de la predicción.
+
+Estos elementos se especifican para la implementación en R de esta forma:
+
+```{r}
+network %>% compile(
+  optimizer = "rmsprop",
+  loss = "categorical_crossentropy",
+  metrics = c("accuracy")
+)
+```
+
+Antes de empezar, necesitamos adecuar los datos al formato esperado por la red. 
+
+```{r}
+train_images <- array_reshape(train_images, c(60000, 28 * 28))
+train_images <- train_images / 255
+
+test_images <- array_reshape(test_images, c(10000, 28 * 28))
+test_images <- test_images / 255
+```
+
+Debemos formatear las etiquetas del data set como variables categóricas. 
+
+```{r}
+train_labels <- to_categorical(train_labels)
+test_labels <- to_categorical(test_labels)
+```
+
+Ahora sí, entrenando la red:
+
+```{r, echo=TRUE, results='hide'}
+network %>% fit(train_images, train_labels, epochs = 5, batch_size = 128)
+```
+
+Durante el entrenamiento se muestran dos métricas
+
++ la variación del resultado de nuestra función de pérdida mientras procesa los datos de entrenamiento, y  
++ la variación en la exactitud de nuestra predicción.
+
+La precisión final del modelo es de 0.989 sobre los datos de entrenamiento. 
+
+A partir del *aprendizaje* logrado por la red, ahora la aplicamos a los datos de prueba:
+
+```{r}
+metrics <- network %>% evaluate(test_images, test_labels, verbose = 0)
+metrics
+```
+
+La precisión es de 0.979, algo más baja que en la muestra de entrenamiento debido a sobreajuste (overfiting), con todo una buena performance.
+
+# Generando predicciones sobre nuevas imágenes
+
+```{r}
+ network %>% predict_classes(test_images[1:10,])
+```
+
