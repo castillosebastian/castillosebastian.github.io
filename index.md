@@ -25,12 +25,8 @@
 [link](https://castillocs.shinyapps.io/shiny_app/)
 
 
-# Puesto Actual
+# Sobre mi
+[linkedin](https://www.linkedin.com/in/claudio-sebasti%C3%A1n-castillo-846a91110/)   
+[@icn-linkdedin]
+[@icn-mail](castilloclaudiosebastian@gmail.com)
 
-- Director de Planificación Gestión y Estadística del Superior Tribunal de Justicia de Entre Ríos, [link](http://www.jusentrerios.gov.ar/area-planificacion-y-estadisticas-stj/)
-
-
-# Contacto
-
-Paraná, Entre Ríos, Argentina, <castilloclaudiosebastian@gmail.com>  
-[linkedin](https://www.linkedin.com/in/claudio-sebasti%C3%A1n-castillo-846a91110/). 
