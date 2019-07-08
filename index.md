@@ -1,10 +1,10 @@
-Hi there, I'm Sebastián. I'm interested in knowledge generation and practical research, with a solid background in epistemology. I have extensive experience in the justice sector, especially in the development of knowledge-based products. My areas of interest are: Knowledge Management, Qualitative and Quantitative Research, and Statistical Analysis in Justice. On the theoretical level I am interested in logic, formal epistemology and political pragmatism (especially its theory of participatory democracy). My frequent Research and Data Analysis tools are Atlas-Ti and R Statistical Computing.    
+Hola, soy Sebastián Castillo gracias por visitar mi página web. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor; no todo lo que hay por acá sirve aunque cada cosa tenga su función, por eso te deseo buen aprendizaje.  
 
 # Epistemología Formal
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
-# Mercado
+# Economía y Mercado
 
 # Justicia
 
