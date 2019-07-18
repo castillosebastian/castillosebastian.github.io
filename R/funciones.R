@@ -1,3 +1,18 @@
+# librerias
+library(dplyr)
+library(lubridate)
+library(stringr)
+library(ggplot2)
+library(tidyr)
+library(forecast)
+library(tidyquant)
+library(timetk)
+library(sweep)
+library(purrr)
+#library(ggpmisc)
+library(ggspectra)
+library(readxl)
+
 # Trabajar con cauciones 
 interes_caucion <- function(monto, interes_anual, dias) {
   interes_periodo <- ( interes_anual / 365 ) * dias

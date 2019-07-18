@@ -1,0 +1,39 @@
+---
+title: "Sector Energético"
+author: "Sebastian Castillo"
+date: "12/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Resumen
+
+El sector energético es un sector importante dentro del BYMA.   
+
+Los activos del sector mantiene una correlación débil con el Índice S&P Merval:    
+Panel Lider: Edenor (EDN), Endesa Costanera (CECO2), Pampa Energía (PAMP), Central Puerto (CEPU), Transener (TRAN). Panel General: Repsol (REP) y Carboclor (CARC).   
+
+Activos con correlación positiva fuerte:
+CEPU: TRAN
+TRAN: EDENOR
+Industrias Gasíferas: TGSU2, TGNO4, DGCU2
+
+Los drivers del sector mas importante son:
+-Política de Tarifas: la política tarifaria es un determinante fundamental en las cotizaciones de estos activos. Las empresas de servicios públicos son las primeras afectadas por esta política: al tener precios regulados, su situación depende en gran medida de las decisiones del gobierno. Por períodos prolongados el congelamiento de tarifas determinó una subvaloración de las acciones del sector. En este caso la mira está puesta en el Congreso. 
+-Decisiones Judiciales: los fallos sobre tarifas, (im)posibilidad de suspensión de suministro por cuestiones de pago, etc, repercuten sobre la cotización.
+-Ínterés y Tipo de cambio: muchas de estas empresas financian sus proyectos tomando deuda así que las subas de interés (y el crecimiento de los pasivos) pueden afectar a la baja las cotizaciones. 
+
+Muchos de estos activos tiene ADR, cotizan en NYE: YPF, CEPU, otros.
+
+Algunos Activos;:
++ CEPU: es considerada uno de las acciones más atractivas del sector, es una de las mayores generadoras privadas de energía eléctrica. Está desarrollando emprendimientos importantes en materia de energía renovable (parques eólicos) y centrales eléctricas. 
++ PAMP: empresa diversificada e integrada verticulamente. Está fusionada con Petrobras Argentina. 
+
+# Fuentes
+[AT_IP_Por Mariano Jaimovich_31.05.2018](https://www.iprofesional.com/finanzas/269154-bonos-merval-bolsa-Acciones-de-empresas-de-energia-Pampa-Transener-TGS-y-Central-Puerto-elegidas-por-el-mercado-en-plena-puja-por-tarifas)     
+
+# Bibliografia
+[]()     

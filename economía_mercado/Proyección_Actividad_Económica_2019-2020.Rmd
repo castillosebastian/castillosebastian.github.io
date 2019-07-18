@@ -1,0 +1,380 @@
+---
+title: "Proyección de Actividad Económica 2019-2020"
+author: "Lic. Sebastian Castillo"
+date: "2019-07-15"
+output: html_document
+params:
+  emae_base:
+    label: "introducir url EMAE_base_INDEC"
+    input: text
+    value: "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_mensual_base2004.xls"
+  emae_base_finicio: 
+    label: "Fecha_inicio EMAE"
+    input: text
+    value: "2004-01-01"
+  emae_base_ffin:
+    label: "Fecha_fin EMAE"
+    input: text
+    value: "2019-04-01"
+  emae_actividad:
+    label: "introducir url EMAE_xsectoractividad_INDEC"
+    input: text
+    value: "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls"
+  emae_actividad_finicio: 
+    label: "Fecha_inicio EMAE x sector actividad"
+    input: text
+    value: "2012-01-01"
+  emae_actividad_ffin:
+    label: "Fecha_fin EMAE x sector actividad"
+    input: text
+    value: "2019-04-01" 
+---
+<style> body {text-align: justify} </style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE, fig.align='center')
+# options(knitr.kable.NA = '')
+source("~/R/castillosebastian.github.io/R/funciones.R")
+```
+
+
+```{r parametros, echo=FALSE, include=FALSE}
+# parametros
+emae_base <- params$emae_base
+emae_base_finicio <- params$emae_base_finicio
+emae_base_ffin <- params$emae_base_ffin
+emae_actividad <- params$emae_actividad
+emae_actividad_finicio <- params$emae_actividad_finicio
+emae_actividad_ffin <- params$emae_actividad_ffin
+# Gracias (thanks to) # Matt Dancho, 2018-03-03
+# https://cran.rstudio.com/web/packages/sweep/vignettes/SW01_Forecasting_Time_Series_Groups.html
+# Otras opciones
+# INDEC - GDP
+# BCRA  Market Interest Survey
+# Índice de Confianza en el Gobierno. Escuela de Gobierno. Universidad Torcuato Di Tella.
+#icg_ditella <- "https://www.utdt.edu//ver_contenido.php?id_contenido=17876&id_item_menu=28756"
+
+```
+
+
+```{r}
+# Evolución EMAE 
+emae_gral_indec <- emae_base
+destfile <- paste0("~/R/castillosebastian.github.io/data/emae_gral_indec_", Sys.Date(), ".xls")
+download.file(emae_gral_indec, destfile= destfile)
+emae_gral <- read_xls(destfile, skip = 2)
+# Formatos
+emae_base_finicio = lubridate::ymd(emae_base_finicio)
+emae_base_ffin = lubridate::ymd(emae_base_ffin)
+
+emae_gral <- emae_gral %>% 
+  select(-Período) %>% 
+  select(matches("Índice")) %>% 
+  na.omit() %>% 
+  rename(Original = 1, Desestacionalizado = 2, Tendencia_ciclo = 3) %>% 
+  mutate(date = seq(emae_base_finicio, emae_base_ffin, by = "month")) %>% 
+  select(date, everything()) %>% 
+  gather("Índice", "Valor", 2:4) 
+  
+emae_gral_graf <- emae_gral %>%
+  ggplot(aes(x = date, y = Valor)) +
+  geom_line(aes(color = Índice)) +
+  theme_minimal() +
+  scale_x_date(date_labels = "%Y", date_breaks = "1 year") +
+  labs(title = "Estimador mensual de actividad económica",
+         subtitle = "Fuente: EMAE INDEC", x = "Año") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+emae_gral_desestacionalizado <- emae_gral %>% 
+  filter(Índice == "Desestacionalizado") %>% 
+  filter(date > make_date(2007,01,01)) 
+
+emae_gral_desestacionalizado_graf <- emae_gral_desestacionalizado %>% 
+  ggplot(aes(x = date, y = Valor)) + 
+  geom_line(aes(color = Índice)) +
+  theme_minimal() +
+  #scale_x_date(date_labels = "%d-%m-%Y") +
+  scale_x_date(date_breaks = "6 month", date_labels = "%b-%Y") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none") +
+  labs(title = "Índice desestacionalizado de actividad económica 2007-2019",
+         subtitle = "Fuente: EMAE INDEC", x = "") +
+  stat_peaks(span = 15, geom = "point", colour = "blue") +
+  stat_valleys(span = 15, geom = "point", colour = "red") +
+  #geom_vline(xintercept = as.numeric(as.Date("2019-01-01")), linetype=4)
+  geom_hline(yintercept = 140.5, size = 2, alpha = 0.4, colour = "red") +
+  scale_y_continuous(breaks = seq(100, 160, 5))
+```
+
+
+# Actividad Económica Argentina 2019-2020
+
+En este informe presentamos una revisión del indicador de actividad económica argentina y su posible evolución en el corto plazo. Este documento fue eleborado en formato abierto para su reproducibilidad y análisis por el lector -puede consultarse por título en este [link](https://github.com/castillosebastian/castillosebastian.github.io/tree/master/mercado)-. Destaco los trabajos de Matt Dancho (proyección) y Walter Ramírez (economía) que contribuyeron a este informe, a los que remito en notas al pie.    
+
+## Evolución del Estimador Mensual  
+
+El informe de INDEC señala que **en abril de 2019 el estimador mensual de actividad económica (EMAE) cayó 1,3% respecto al mismo mes de 2018.**, pero seguidamente destaca que **el indicador desestacionalizado creció 0,8% y la tendencia-ciclo creció 0,1% respecto al mes anterior**. [^emae_base_indec] De esto podría inferirse una incipiente reactivación de la actividad económica en en los últimos meses y una posible reversión de la tendencia recesiva. 
+
+```{r, out.width = "70%"}
+emae_gral_graf
+```
+
+## Estimador Desestacionalizado
+
+Revisando los ciclos de los últimos nueve años y asumiendo como premisa la reversión de la tendencia recesiva, podría esperarse hacia el segundo semestre 2019 y el 2020 una actividad económica con objetivo técnico encima de los 150 puntos, es decir superior a los máximos históricos. Este último será el dato a monitorear en los próximos meses en materia de actividad.   
+
+Sin perjuicio de ello, nótese que, luego de la caída del 2009, en los últimos 9 años el indicador estuvo lateralizado revelando la parálisis de nuestra económica. Como resalta Walter Ramírez[^walter_ramirez] -Gerente del Departamento de Investigación del Banco Supervielle- hoy nos encontramos con indicadores macro similares a los de hace nueva años, a lo que agregaría por mi parte: con una caída mayor a la experimentada en 2014 (con una crisis cambiaria histórica) y 2016-2017 (con una inflación cercana al 50%). Durante los últimos 100 años la tasa de inflación promedio fue de 105% anual con un máximo histórico de 3079% en 1989 -resalta en su informe la Cámara de Comercio-[^cac_uepe]. 
+
+```{r, out.width = "70%"}
+emae_gral_desestacionalizado_graf
+```
+
+
+```{r}
+# Analisis por Sectores
+emae_xsactividad <- emae_actividad
+destfile <- paste0("~/R/castillosebastian.github.io/data/emae_xsactividad_indec", Sys.Date(), ".xls")
+download.file(emae_xsactividad, destfile= destfile)
+emae <- read_xls(destfile, skip = 3, col_types =  c("text",
+                                                     "numeric", "numeric", "numeric", "numeric",
+                                                     "numeric", "numeric", "numeric", "numeric",
+                                                     "numeric", "numeric", "numeric", "numeric",
+                                                     "numeric", "numeric", "numeric", "numeric"))
+# Formatos
+emae_actividad_finicio = lubridate::ymd(emae_actividad_finicio)
+emae_actividad_ffin = lubridate::ymd(emae_actividad_ffin)
+
+emae_actividad <- emae %>%
+  slice(str_which(emae$Período, as.character(year(emae_actividad_finicio))) + 1:n()) %>% # filtro 2012
+  filter(complete.cases(.)) %>%
+  mutate(Período = seq(emae_actividad_finicio, emae_actividad_ffin, by = "month"))
+
+# Analisis Serie Temporal Multivariante
+emae_tidy <- emae_actividad %>%
+  gather("Sector", "Índice", 2:17)
+
+emae_nest <- emae_tidy %>%
+  group_by(Sector) %>%
+  nest(.key = "data.tbl")
+
+emae_ts <- emae_nest %>%
+  mutate(data.ts = map(.x = data.tbl,
+                       .f = timetk::tk_ts,
+                       select = -Período,
+                       start = 2012,
+                       freq  = 12))
+emae_fit <- emae_ts %>%
+  mutate(fit.ets = map(data.ts, forecast::ets))
+
+# emae_fit %>%
+#   mutate(tidy = map(fit.ets, sw_tidy)) %>%
+#   unnest(tidy, .drop = TRUE) %>%
+#   spread(key = Sector, value = estimate)
+
+emae_fit_ets <- emae_fit %>%
+  mutate(augment = map(fit.ets, sw_augment, timetk_idx = TRUE, rename_index = "date")) %>%
+  unnest(augment, .drop = TRUE)
+
+emae_fit_descomp <- emae_fit %>%
+  mutate(decomp = map(fit.ets, sw_tidy_decomp, timetk_idx = TRUE, rename_index = "date")) %>%
+  unnest(decomp)
+
+library(viridis)
+
+emae_fit_descomp_graf <- emae_fit_descomp %>%
+  filter(!str_detect(Sector, "Impuestos")) %>% 
+  mutate(Sector = str_sub(Sector, 1, 40)) %>% 
+  mutate(trendMA12 = runMean(level, 12)) %>%
+  mutate(trendMA6 = runMean(level, 6)) %>%
+  mutate(trendMA3 = runMean(level, 3)) %>%
+  filter(date > make_date(2015,1,1)) %>% 
+  ggplot(aes(x = date, y = trendMA3)) +
+  theme_minimal() +
+  geom_line(aes(color = Sector)) +
+  scale_x_date(date_breaks = "3 month", date_labels = "%b-%Y") +
+  scale_colour_viridis_d(option = "inferno") +
+  geom_vline(xintercept = as.numeric(as.Date("2018-05-01")), size = 10, linetype=1, colour = "red", alpha = 0.4 ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Índice desestacionalizado por sector de actividad económica",
+         subtitle = "Fuente: EMAE INDEC", y = "Valor", x = "")
+
+emae_fit_descomp_graf2 <- emae_fit_descomp %>%
+  filter(str_detect(Sector, "A |D |G |I |K ")) %>% 
+  mutate(Sector = str_sub(Sector, 1, 40)) %>% 
+  mutate(trendMA12 = runMean(level, 12)) %>%
+  mutate(trendMA6 = runMean(level, 6)) %>%
+  mutate(trendMA3 = runMean(level, 3)) %>%
+  filter(date > make_date(2015,1,1)) %>% 
+  ggplot(aes(x = date, y = trendMA3)) +
+  theme_minimal() +
+  geom_line(aes(color = Sector)) +
+  scale_x_date(date_breaks = "3 month", date_labels = "%b-%Y") +
+  scale_colour_viridis_d(option = "inferno") +
+  geom_vline(xintercept = as.numeric(as.Date("2018-05-01")), size = 10, linetype=1, colour = "red", alpha = 0.4 ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Índice desestacionalizado por sector de actividad económica",
+         subtitle = "Fuente: EMAE INDEC", y = "Valor", x = "")
+```
+
+## Estimador de Actividad por Sector Económico
+
+En el siguiente gráfico vemos la evolución del estimador sobre actividad económica en el período 2015-2019, coincidente con la Presidencia de Macri.
+
+Vemos que en el 2018 se observa la fuerte caida del Sector Agropecuario que se propagó a los demás sectores (salvo Pesca, Ensañanza, Salud y Adm.Pública) evidenciando la acentuada dependencia que mantiene nuestra economía con ese sector. En abril de ese año el Ministerio de Agroindustria confirmaba una caída interanual del 20% en la producción granaria; excesos de lluvias a fines de 2017 (en Buenos Aires, La Pampa y Santa Fe) y una de las más importantes sequías de los últimos 50 años, llevaron a la declaración de emergencia en distintas regiones del país.[^infobae]
+
+```{r, out.width = "70%"}
+emae_fit_descomp_graf
+```
+
+En este gráfico vemos los sectores económicos con más peso en el PIB nacional, con valor agregado bruto a precios básicos superior a los 50 mil millones y su estrecha relación con el Sector Agropecuario cuyo aporte al PIB es de 43.7 mil millones (año 2018).[^informe_avance_emae_indec]
+
+```{r, out.width = "70%"}
+emae_fit_descomp_graf2
+```
+
+## Proyección de Actividad por Sector Económico
+
+En los siguientes gráficos presentamos una proyección cuantitativa para los próximos 12 meses de la avtividad de cada sector a partir de sus datos históricos.[^matt_dancho] El gráfico muestra la proyección en línea roja y en azul-celeste intervalos de confianza del 95% y 80% respectivamente.
+
+```{r}
+# Predicción sobre los modelos
+emae_fit_forecast <- emae_fit %>%
+  mutate(fcast.ets = map(fit.ets, forecast, h = 12))
+
+emae_fit_forecast_tidy <- emae_fit_forecast %>%
+  mutate(sweep = map(fcast.ets, sw_sweep, fitted = FALSE, timetk_idx = TRUE)) %>%
+  unnest(sweep)
+
+
+# ---------------------------------Facetados: para utilizar con grupos de sectores--------------
+# emae_fft_g1 <- emae_fit_forecast_tidy %>%
+#   filter(index > make_date(2017,01,01)) %>%
+#   rename(serie = key) %>% 
+#   mutate(serie = str_replace_all(serie, "actual", "histórico")) %>% 
+#   mutate(serie = str_replace_all(serie, "forecast", "proyección")) %>% 
+#   ggplot(aes(x = index, y = Índice, color = serie, group = Sector)) +
+#   geom_ribbon(aes(ymin = lo.95, ymax = hi.95),
+#                 fill = "#D5DBFF", color = NA, size = 0) +
+#   geom_ribbon(aes(ymin = lo.80, ymax = hi.80, fill = serie),
+#                 fill = "#596DD5", color = NA, size = 0, alpha = 0.8) +
+#   geom_line() +
+#   labs(title = "Proyección de Actividad Económica por Sector Productivo: 2019- 2020",
+#        subtitle = "Base: Estimador Mensual de Actividad Económica INDEC", x = "", y = "Units") +
+#   scale_x_date(date_breaks = "3 month", date_labels = "%m-%Y") +
+#   scale_color_tq() +
+#   scale_fill_tq() +
+#   facet_wrap(~ Sector, scales = "free_y", ncol = 2) +
+#   theme_tq() +
+#   theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+grafxsector <- function(sector) {
+  
+  resultado <- emae_fit_forecast_tidy %>%
+    filter(index > make_date(2017,01,01)) %>%
+    filter(str_detect(Sector, sector)) %>% 
+    rename(serie = key) %>% 
+    mutate(serie = str_replace_all(serie, "actual", "histórico")) %>% 
+    mutate(serie = str_replace_all(serie, "forecast", "proyección")) %>% 
+    ggplot(aes(x = index, y = Índice, color = serie, group = Sector)) +
+    geom_ribbon(aes(ymin = lo.95, ymax = hi.95),
+                  fill = "#D5DBFF", color = NA, size = 0) +
+    geom_ribbon(aes(ymin = lo.80, ymax = hi.80, fill = serie),
+                  fill = "#596DD5", color = NA, size = 0, alpha = 0.8) +
+    geom_line() +
+    labs(#title = "Proyección de Actividad Económica 2019- 2020",
+         subtitle = emae_fit_forecast_tidy$Sector[str_detect(emae_fit_forecast_tidy$Sector, sector)][1],
+         x = "", y = "Valor") +
+    scale_x_date(date_breaks = "2 month", date_labels = "%m-%Y") +
+    scale_color_tq() +
+    scale_fill_tq() +
+    #facet_wrap(~ Sector, scales = "free_y", ncol = 2) +
+    theme_tq() +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  resultado
+  
+}
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("A ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("B ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("C ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("D ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("E ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("F ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("G ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("H ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("I ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("J ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("K ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("L ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("M ")
+```
+
+
+```{r, out.width = "70%"}
+grafxsector("O ")
+```
+
+## Consideraciones Finales
+
+Los sectores económicos más importantes en la composición del PBI (Industria Manufacturera, Comercio, Transporte y Act.Inmobiliaria), mantienen una correlación positiva fuerte con el Sector Agrepecuario por lo que su nivel de actividad próxima será un factor determinante en su desempeño. Cada sector presenta distribuciones heterogeneas en sus respectivos niveles de actividad, aunque la mayoría cuenta con patrones constantes que fortalecen la predicción de su comportamiento futuro. Queda pendiente explorar con más detenimiento la interacción entre cada sector con los demás.    
+
+En próximas ediciones del informe agregaremos nuevas variables macroeconómicas (Inflación, Tasa de interés, Tipo de Cambio y Situación Fiscal) para completar el escenario nacional.
+
+*** 
+[^emae_base_indec]: INDEC, Estimador mensual de actividad económica, Abril de 2019, Informes Técnicos. Vol. 3, nº 119, ISSN 2545-6636, Cuentas nacionales. Vol. 3, nº 10., , URL = <https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48>.
+[^walter_ramirez]: Walter Andrés Ramírez, Coyuntura económica y financiera preelectoral, invertirOnline, Streamed live on Jul 3, 2019, disponible publicamente en URL = <https://www.youtube.com/watch?v=iAKVWbctubc&t=797s>.
+[^cac_uepe]: Cámara Argentina de Comercio y Servicios (CAC), Unidad de Estudios y Proyectos Especiales (UEPE), informe del 13/07/2018 sobreHistoria de la inflación en Argentina, accesible en URL = <https://www.cac.com.ar/data/documentos/10_Historia%20de%20la%20inflaci%C3%B3n%20en%20Argentina.pdf>.    
+[^infobae]: "El Gobierno estimó una caída del 29% para la cosecha de soja y pérdidas por USD 5.000 millones", Infobae, <https://www.infobae.com/campo/2018/04/20/el-gobierno-estimo-una-caida-del-29-para-la-cosecha-de-soja-y-perdidas-por-usd-5-000-millones/>.  
+[^matt_dancho]: Gracias al excelente caso de uso elaborado por Matt Dancho utilizando R, en "Forecasting Time Series Groups in the tidyverse", 2018-03-03, accesible publicamente en URL = <https://cran.rstudio.com/web/packages/sweep/vignettes/SW01_Forecasting_Time_Series_Groups.html>.   
+[^informe_avance_emae_indec]: INDEC, Informe de avance del nivel de actividad - Primer trimestre de 2019, Cuadro 4. Producto interno bruto, por categoría de tabulación. Valores trimestrales en millones de pesos a precios de 2004, acceso público en <https://www.indec.gob.ar/uploads/informesdeprensa/pib_06_19216BF7828F.pdf>.
