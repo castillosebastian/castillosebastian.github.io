@@ -108,7 +108,7 @@ emae_gral_desestacionalizado_graf <- emae_gral_desestacionalizado %>%
 
 # Actividad Económica Argentina 2019-2020
 
-En este informe presentamos una revisión del indicador de actividad económica argentina y su posible evolución en el corto plazo. Este documento fue eleborado en formato abierto para su reproducibilidad y análisis por el lector -puede consultarse por título en este [link](https://github.com/castillosebastian/castillosebastian.github.io/blob/master/econom%C3%ADa_mercado/Proyecci%C3%B3n_Actividad_Econ%C3%B3mica_2019_2020.Rmd)-. Destaco los trabajos de Matt Dancho (proyección) y Walter Ramírez (economía) que contribuyeron a este informe, a los que remito en notas al pie.    
+En este informe presentamos una revisión del indicador de actividad económica argentina y su posible evolución en el corto plazo. Este documento fue eleborado en formato abierto para su reproducibilidad y análisis por el lector -puede consultarse por título en este [link](https://github.com/castillosebastian/castillosebastian.github.io) .Destaco los trabajos de Matt Dancho (proyección) y Walter Ramírez (economía) que contribuyeron a este informe, a los que remito en notas al pie.    
 
 ## Evolución del Estimador Mensual  
 
