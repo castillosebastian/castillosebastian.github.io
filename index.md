@@ -10,9 +10,17 @@ Hola, soy Sebastián Castillo gracias por visitar mi página web (en construcci�
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
+# Justicia
+(proximamente)
+
+# Code&Art
+(proximamente)
+
 # Aplicaciones
 - 2019-01-10 Algoritmo para procesamiento predictivo de próxima palabra: *Word Predictor App*. 
 [link](https://castillocs.shinyapps.io/shiny_app/)
+- 2019-07-01 Aplicación para archivo de registros de operatorias en el mercado de capitales: *InvestManager*. [link](https://castillocs.shinyapps.io/InvestManager/)
+
 
 # Sobre mi
 [linkedin](https://www.linkedin.com/in/claudio-sebasti%C3%A1n-castillo-846a91110/) - [twitter](https://twitter.com/casebastillo) - [github](https://github.com/castillosebastian) - castilloclaudiosebastian@gmail.com
