@@ -9,11 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
-
-#########################
-
-Analisis Inicial
+## Analisis Inicial
 
 -SEMANA 1
 día 1
