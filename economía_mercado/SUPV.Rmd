@@ -24,6 +24,8 @@ En su historia el trayecto similar a 82 lo hizo en el plazo que va de 26 a 42 d�
 knitr::include_graphics("SUPV_AT.png")
 ```
 
+Gráfico con canal alcista de corto plazo, con soportes y resistencias. Un *stop loss* efectivo sería por debajo del soporte de 60, es decir en: 59.
+
 ```{r}
 knitr::include_graphics("SUPV_intradiario_diadecompra.png")
 ```
@@ -44,7 +46,7 @@ Precio por acción: $`r precio_entrada`
 Cantidad de acciones: `r n_acciones` 
 Comisión: `r comision`       
 IVA y Derechos de Mercado: $`r IVA`    
-Inversión: $`r inversion`    
+Inversión: $99061.95    
    
 CSC     
 ***   
