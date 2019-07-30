@@ -12,7 +12,7 @@ library(knitr)
 
 # Observaciones
 
-La acción del Banco Supervielle concluye la semana el viener 25/07/19 en los $66.55 por acción con una mejora del 3% respecto al viernes de la semana pasada. En el año acumulado gana un 7% en pesos y cae 6% en dólares. En el gráfico semanal, el precio tuvo soporte en el 38% de retroceso desde el máximo marcado en el año.     
+La acción del Banco Supervielle concluye la semana el vienes 25/07/19 en los $66.55 por acción con una mejora del 3% respecto al viernes de la semana pasada. En el año acumulado gana un 7% en pesos y cae 6% en dólares. En el gráfico semanal, el precio tuvo soporte en el 38% de retroceso desde el máximo marcado en el año.     
 
 En el gráfico diario, el mercado mostró cara y cruz ya que comenzó la semana con un gap a la baja luego encontró soporte en los $60 y dejó una vela con un +7% que dejó contentos a más de un inversor.    
 

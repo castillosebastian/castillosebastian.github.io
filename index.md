@@ -2,7 +2,7 @@ Hola, soy Sebastián Castillo gracias por visitar mi página web (en construcci�
 
 # Economía y Mercado
 - 2019-07-15: Proyección de la Actividad Económica Argentina 2019-2020. [link](https://castillosebastian.github.io/economía_mercado/Proyección_Actividad_Económica_2019_2020.html)
-- 2019-7-29: SUPV-revisión y primera operatoria con renta variable. [link](https://castillosebastian.github.io/economía_mercado/SUPV.html)
+- 2019-07-29: SUPV-revisión y primera operatoria con renta variable. [link](https://castillosebastian.github.io/economía_mercado/SUPV.html)
 
 # Democracia
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
