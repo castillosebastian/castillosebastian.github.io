@@ -1,0 +1,50 @@
+---
+title: "Banco Supervielle - Ficha Técnica"
+author: "Sebastian Castillo"
+date: "12/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
+library(knitr)
+```
+
+# Observaciones
+
+La acción del Banco Supervielle concluye la semana el viener 25/07/19 en los $66.55 por acción con una mejora del 3% respecto al viernes de la semana pasada. En el año acumulado gana un 7% en pesos y cae 6% en dólares. En el gráfico semanal, el precio tuvo soporte en el 38% de retroceso desde el máximo marcado en el año.     
+
+En el gráfico diario, el mercado mostró cara y cruz ya que comenzó la semana con un gap a la baja luego encontró soporte en los $60 y dejó una vela con un +7% que dejó contentos a más de un inversor.    
+
+# Análisis      
+  
+En su historia el trayecto similar a 82 lo hizo en el plazo que va de 26 a 42 días: es decir tuvo subas rápidas. También tuvo una baja abrupta en el 2018, aquí esta el riesgo.
+
+```{r}
+knitr::include_graphics("SUPV_AT.png")
+```
+
+```{r}
+knitr::include_graphics("SUPV_intradiario_diadecompra.png")
+```
+
+# Ejeucción de orden de compra    
+
+```{r, eval=TRUE}
+fecha_compra = lubridate::make_date(2019,07,29)
+n_acciones = 1443
+precio_entrada = 68.65
+comision = 0.07
+IVA = 100     
+inversion = n_acciones * precio_entrada    
+```
+
+Fecha de compra: `r fecha_compra`    
+Precio por acción: $`r precio_entrada`    
+Cantidad de acciones: `r n_acciones` 
+Comisión: `r comision`       
+IVA y Derechos de Mercado: $`r IVA`    
+Inversión: $`r inversion`    
+   
+CSC     
+***   

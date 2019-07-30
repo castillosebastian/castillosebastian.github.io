@@ -1,5 +1,5 @@
 ---
-title: "Sector Energético"
+title: "Sector Energético - Ficha Técnica"
 author: "Sebastian Castillo"
 date: "12/7/2019"
 output: html_document
@@ -19,7 +19,6 @@ Panel Lider: Edenor (EDN), Endesa Costanera (CECO2), Pampa Energía (PAMP), Cent
 Activos con correlación positiva fuerte:
 CEPU: TRAN
 TRAN: EDENOR
-Industrias Gasíferas: TGSU2, TGNO4, DGCU2
 
 Los drivers del sector mas importante son:
 -Política de Tarifas: la política tarifaria es un determinante fundamental en las cotizaciones de estos activos. Las empresas de servicios públicos son las primeras afectadas por esta política: al tener precios regulados, su situación depende en gran medida de las decisiones del gobierno. Por períodos prolongados el congelamiento de tarifas determinó una subvaloración de las acciones del sector. En este caso la mira está puesta en el Congreso. 

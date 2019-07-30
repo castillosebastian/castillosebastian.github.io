@@ -1,5 +1,5 @@
 ---
-title: "Analisis Entrada"
+title: "Trading: Analisis de puntos de entrada"
 author: "Sebastian Castillo"
 date: "13/7/2019"
 output: html_document
@@ -9,7 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Analisis Inicial
+## Analisis de puntos de entrada
+
+Elaborado sobre la base 
 
 -SEMANA 1
 día 1
