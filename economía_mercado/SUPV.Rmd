@@ -36,17 +36,30 @@ knitr::include_graphics("SUPV_intradiario_diadecompra.png")
 fecha_compra = lubridate::make_date(2019,07,29)
 n_acciones = 1443
 precio_entrada = 68.65
-comision = 0.07
-IVA = 100     
-inversion = n_acciones * precio_entrada    
+comision = 0.7
+IVA = 100
+capital_i = 100000
+compra = n_acciones * precio_entrada    
 ```
 
-Fecha de compra: `r fecha_compra`    
-Precio por acción: $`r precio_entrada`    
+Fecha de compra: `r fecha_compra`     
+Precio por acción: $`r precio_entrada`     
 Cantidad de acciones: `r n_acciones` 
-Comisión: `r comision`       
+Comisión: `r comision`%          
 IVA y Derechos de Mercado: $`r IVA`    
-Inversión: $99061.95    
-   
+Capital inicial: $100000      
+
+# Proyección de orden de venta
+
+El retorno esperado de la inversión debería mejorar el rendimiento de inversiones en renta fija (ej. FCI Quinquela Ahorro (cartera mayoritaria en LECAPS) tasa mensual 4.9% o Cauciones 4.04%) y ser mayor a la tasa de inflación jun-19 2.7% (proyectada a un año 30%).     
+
+```{r}
+tasa_referencia <- 0.05
+umbral_mejor_opcion_30d <- 100000*0.05
+precio_objetivo_min <- 105000/n_acciones
+```
+
+Bajo el escenario descripto la tasa de referencia es de `r tasa_referencia*100`%, el retorno mínimo a lograr en los próximos 30 días es de `r umbral_mejor_opcion_30d` y el precio objetivo mínimo de la catización debería alcanzar el valor de $`r round(precio_objetivo_min, digit = 2)`. Es decir, debe superar la primer resistencia para empezar a generar retorno positivo. Nuestro *take profit* estaría a partir de aquí hacia arriba según AT y coyuntura.          
+  
 CSC     
 ***   
