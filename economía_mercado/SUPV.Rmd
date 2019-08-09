@@ -38,7 +38,7 @@ n_acciones = 1443
 precio_entrada = 68.65
 comision = 0.7
 IVA = 100
-capital_i = 100000
+capital_i = 100000 - 900 # menos comision mas iva
 compra = n_acciones * precio_entrada    
 ```
 
@@ -61,5 +61,36 @@ precio_objetivo_min <- 105000/n_acciones
 
 Bajo el escenario descripto la tasa de referencia es de `r tasa_referencia*100`%, el retorno mínimo a lograr en los próximos 30 días es de `r umbral_mejor_opcion_30d` y el precio objetivo mínimo de la catización debería alcanzar el valor de $`r round(precio_objetivo_min, digit = 2)`. Es decir, debe superar la primer resistencia para empezar a generar retorno positivo. Nuestro *take profit* estaría a partir de aquí hacia arriba según AT y coyuntura.          
   
+# Ejecución de orden de venta
+
+```{r}
+fecha_venta = lubridate::make_date(2019,08,08)
+n_acciones = 1443
+precio_salida = 64.5
+comision = 0.7
+IVA = 100
+capital_retorno = (n_acciones * precio_salida) - 900
+resultado_ptje = (capital_retorno / capital_i) - 1
+ 
+```
+
+```{r}
+knitr::include_graphics("SUPV_2019_08_08.png")
+```
+
+La venta se efectuó en `r fecha_venta` por un monto de $`r precio_salida` por acción, el capital resultante es de  pesos 92173,5 o sea que el resultado de la operación fue: `r resultado_ptje`%.
+
+# Conclusión
+
+La primera operacion con acciones fue un fracaso, con una pérdida total de $8.000, decremento del capital invertido del 7%.    
+
+Los factores que llevaron a ese resultado son:   
+
++ analisis de contexto: mala lectura del escenario, reconocimiento superficial de la volatil, incapacidad para aprovechar volatilidad para tener un buen punto de entrada y salida.   
++ ejecución ineficiente: Entrada en un valor alto, en una rueda con mucha amplitud, falta de experiencia, ansiedad. Esto fue por una falta de conocimiento del comportamiento diario de la acción. SEGUIMIENTO PREVIO y MEJORAR EJECUCION.    
++ Revisar el calendario político económico en el curso de la inversión para proyectar sus variaciones. FIJAR CALENDARIO DE INVERSION.    
++ Revisión del monto a invertir: la apuesta fuerte fue con el objetivo de buscar mayor retorno. Es la mejor estrategia un retorno grande o muchos pequeños?. ESTRATEGIA.    
++ Analisis de la acción: el análisis para toma de decisión no se detuvo en el corto plazo: un mes. Miró un plazo más largo, obviando el calendario de la inversión. Una mirada más detenida de lo que venía por delante hubiese obligado a adoptar una actitud más conservado por ejemplo en el monto. De todas formas el desarme de la posición protegiendo el capital fue una decisión bien ejecutada para cortar pérdidas.    
+
 CSC     
 ***   
