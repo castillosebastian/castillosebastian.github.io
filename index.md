@@ -1,6 +1,4 @@
-<center>
-![](hijos.jpg)
-</center>
+![](hijos.jpg) 
 
 Hola, soy Sebastián Castillo gracias por visitar mi página web (en construcción). Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función, por eso te deseo buen aprendizaje.  
 
