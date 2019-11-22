@@ -1,6 +1,6 @@
 ![](hijos.jpg) 
-
-Hola, soy Sebastián Castillo gracias por visitar mi página web (en construcción). Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función, por eso te deseo buen aprendizaje.  
+  
+Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función. Buen viaje.  
 
 # Democracia
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
@@ -12,7 +12,7 @@ Hola, soy Sebastián Castillo gracias por visitar mi página web (en construcci�
 # Justicia
 (proximamente)
 
-# Economía y Me   rcado
+# Economía y Mercado
 - 2019-07-15: Proyección de la Actividad Económica Argentina 2019-2020. [link](https://castillosebastian.github.io/economía_mercado/Proyección_Actividad_Económica_2019_2020.html)
 
 # Code&Art
