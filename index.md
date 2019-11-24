@@ -1,6 +1,4 @@
-![](hijos.jpg) 
-  
-Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función. Buen viaje.  
+Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función. 
 
 # Democracia
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
@@ -28,6 +26,7 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 - 2017-10-01 Módulo Organización, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyejuserorganization/src/master/)     
   
 # Sobre mi
+![](hijos.jpg)     
 [linkedin](https://www.linkedin.com/in/claudio-sebasti%C3%A1n-castillo-846a91110/) -  [github](https://github.com/castillosebastian) - castilloclaudiosebastian@gmail.com
 
 
