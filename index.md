@@ -2,7 +2,7 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 
 # Procesamiento Lenguaje Natural
 
-- 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos-de-Lenguaje.html)
+- 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
 
 # Epistemología Formal
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
