@@ -11,7 +11,7 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 # Democracia y Justicia    
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
 
-# Economía y Mercado
+# Miscelánea
 - 2019-07-15: Proyección de la Actividad Económica Argentina 2019-2020. [link](https://castillosebastian.github.io/economía_mercado/Proyección_Actividad_Económica_2019_2020.html)
 
 # Code&Art
