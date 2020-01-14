@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introducción
 
-Este es un apunte sobre el dominio del Procesamiento de Lenguaje Natural elaborado a partir de autores que citaremos en cada pasaje. El objetivo de este manterial es emprender una reconstrucción de este campo disciplinar desde una perspectiva epistemológica, a fin de llegar a enriquecer la reflexión que hoy se producen en torno a las tecnologías que emplean estas herramientas. Particularmente tenemos en mente aquellas implementaciones que suponen el uso de estrategias de *aprendizaje formal* o *inteligencia artificial*.
+Este es un apunte sobre el dominio del Procesamiento de Lenguaje Natural elaborado a partir de autores que citaremos en cada pasaje. El objetivo de este manterial es emprender una reconstrucción de este campo disciplinar desde una perspectiva epistemológica, a fin de llegar a enriquecer la reflexión que hoy se produce en torno a las tecnologías que emplean estas herramientas. Particularmente tenemos en mente aquellas implementaciones que suponen el uso de estrategias de *aprendizaje formal* o *inteligencia artificial*.
 
 # Modelos de Lenguaje [^Jurafsky]
 
@@ -28,6 +28,16 @@ Este computo extendido a la historia de palabras precedentes podría ser de impo
 ¿Cómo se efectúa el cómputo de esa aproximación? La idea más intuitiva acaso sea calcular el *estimador de máxima verosimilitud* o MLE, se vectoriza las palabras de un corpus, se produce contando de las ocurrencias y se normalizan los valores de tal forma de que el valor asociado a la ocurrencia de cada palabra (o feature) caiga entre 0 y 1 (conforme valores de probabilidad). El ratio resultante se denomina *frecuencia relativa*.     
 
 De esta forma se pueden trabajar *n-grams* donde n = 2, n = 3, n = N. Las aplicaciones normalmente usan n = 3 a n = 5 (esto último cuando el corpus es suficientemente grande.)
+
+# Restricciones del LM   
+
+Las características de esta estrategia determina ciertas restricciones a su eficacia. En primer lugar, LM presenta gran dependencia de set de entrenamiento por lo que resulta poco generalizable. Eso implica que su eficacia siempre está condicionada a la similitud de generos o dominios de lenguaje.     
+
+Otro restricción está dada por la subestimación de terminos cuya ocurrencia es 0 en el set de entrenamiento pero resultan frecuentes dentro del dominio de lenguaje en cuestión.    
+
+Finalmente, no es extraño en muchos dominios del lenguaje la existencia de vocabularios abiertos y la ocurrencia, en tal caso, de palabras desconocidas.     
+
+Estas distintas restricciones pueden tratarse de distinta forma para lograr un modelo más flexible al momento de asignar probabilidad. Implica distintas formas de *suavizar* la función de probabilidad asignado valores ligeramente superiores a 0. Por ejemplo partir de un conteo de frecuencia que por defecto sea 1. 
 
 # Evaluación de LM   
 
