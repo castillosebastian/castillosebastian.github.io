@@ -17,12 +17,14 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 # Code&Art
 (proximamente)
 
-# Aplicaciones, librerías y repos
-- 2019-10-01 Módulo de Procesamiento Estadístico, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyeprocesamiento/src/master/)    
-- 2019-01-10 Algoritmo para procesamiento predictivo de próxima palabra: *Word Predictor App*. 
-[link](https://castillocs.shinyapps.io/shiny_app/)      
-- 2019-02-01 Módulo de Publicación de Boletín Mensual de Estadística, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyeinformes/src/master/)
-- 2018-06-01 Tableros Públicos de Estadística, Poder Judicial de Entre Ríos, Argentina [link](https://bitbucket.org/apgye/tablero/src/master/)    
+# Aplicaciones    
+- 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
+- 2019-01-10 *Word Predictor App*: algoritmo para procesamiento predictivo de próxima palabra. 
+[link](https://castillocs.shinyapps.io/shiny_app/)    
+
+
+# Librerías y repos
+- 2019-02-01 Módulo de Publicación de Boletín Mensual de Estadística, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyeinformes/src/master/)    
 - 2017-10-01 Módulo de Operaciones Estadísticas, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyeoperationsjuser/src/master/)    
 - 2017-10-01 Módulo Organización, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyejuserorganization/src/master/)     
   
