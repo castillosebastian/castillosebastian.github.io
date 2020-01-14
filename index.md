@@ -8,11 +8,8 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
-# Democracia
+# Democracia y Justicia    
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
-
-# Justicia
-(proximamente)
 
 # Economía y Mercado
 - 2019-07-15: Proyección de la Actividad Económica Argentina 2019-2020. [link](https://castillosebastian.github.io/economía_mercado/Proyección_Actividad_Económica_2019_2020.html)
