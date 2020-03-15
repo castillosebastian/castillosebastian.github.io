@@ -1,0 +1,23 @@
+---
+title: "Modelos de Lenguaje"
+author: "Sebastian Castillo"
+date: "10 de enero de 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introducción
+
+# Modelos de Lenguaje [^Jurafsky]
+
+
+$$ P(w|h) $$  
+
+ *estimador de máxima verosimilitud* 
+
+
+[^Jurafsky]: Dan Jurafsky and James H. Martin, Speech and Language Processing (3rd ed. draft), work in progress, free access URL = <https://web.stanford.edu/~jurafsky/slp3/>.
+
