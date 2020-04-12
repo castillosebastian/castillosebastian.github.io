@@ -10,7 +10,6 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
 # Democracia y Justicia 
-- 2020-03-10: Servicio de Justicia y Estado de Excepción. Notas sobre COVID-19. [link](https://castillosebastian.github.io/justicia/servicio_justicia_estado_excepcion_covid19.html)
 - 2020-03-03: Estadística Pública y Administración de Justicia.  [link](https://medium.com/@castilloclaudiosebastian/estad%C3%ADstica-p%C3%BAblica-y-administraci%C3%B3n-de-justicia-d33141da0708)
 - 2016-05-28: Democracia y Justicia: una presentación del problema. [link](https://castillosebastian.github.io/democracia/Democracia_y_Justicia__una_presentacion_del_problema.html)
 
