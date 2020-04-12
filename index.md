@@ -1,6 +1,8 @@
 Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. No todo lo que hay por acá sirve aunque cada cosa tenga su función. 
 
 # Procesamiento Lenguaje Natural
+- 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
+- 2020-04-10: Legal Corpus from Supreme Court of Buenos Aires, Argentina. [link](https://github.com/castillosebastian/legal_corpus) 
 - 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
 
 # Epistemología Formal
