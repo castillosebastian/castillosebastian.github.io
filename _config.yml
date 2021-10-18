@@ -1,6 +1,1 @@
 theme: jekyll-theme-cayman
-darkmode: true
-color:
-  header: "#000"
-  gradient_left: "#e53935"
-  gradient_right: "#f57c00"
