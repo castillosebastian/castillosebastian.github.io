@@ -1,4 +1,4 @@
-Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. Así que, va entonces, mi particular combinación de algoritmos y filosofía. 
+Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. Así que, va entonces, algu
 
 # Procesamiento Lenguaje Natural
 - 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
@@ -9,7 +9,7 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
-# Democracia y Justicia 
+# Estadística y Justicia 
   - 2020-03-03: Estadística Pública y Administración de Justicia.  [link](https://medium.com/@castilloclaudiosebastian/estad%C3%ADstica-p%C3%BAblica-y-administraci%C3%B3n-de-justicia-d33141da0708)
 
 # Code&Art
