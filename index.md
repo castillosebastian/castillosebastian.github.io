@@ -16,14 +16,10 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 # Miscelánea
 - 2019-07-15: Proyección de la Actividad Económica Argentina 2019-2020. [link](https://castillosebastian.github.io/economía_mercado/Proyección_Actividad_Económica_2019_2020.html)
 
-# Code&Art
-(proximamente)
-
 # Aplicaciones    
 - 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
 - 2019-01-10 *Word Predictor App*: algoritmo para procesamiento predictivo de próxima palabra. 
 [link](https://castillocs.shinyapps.io/shiny_app/)    
-
 
 # Librerías y repos
 - 2019-02-01 Módulo de Publicación de Boletín Mensual de Estadística, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyeinformes/src/master/)    
@@ -31,7 +27,6 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 - 2017-10-01 Módulo Organización, **JUSTAT**, Poder Judicial de Entre Ríos, Argentina, [link](https://bitbucket.org/apgye/apgyejuserorganization/src/master/)     
   
 # Sobre mi
-![](hijos.jpg)     
-[linkedin](https://www.linkedin.com/in/claudio-sebasti%C3%A1n-castillo-846a91110/) -  [github](https://github.com/castillosebastian) - castilloclaudiosebastian@gmail.com
+[linkedin](www.linkedin.com/in/castillocs) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/)  castilloclaudiosebastian@gmail.com
 
 
