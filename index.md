@@ -2,7 +2,7 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 
 
 ![](Rplot.png) 
-
+<center>*Mis análisis en la Poder Judicial*</center>
 
 # Estadística y Justicia 
   - 2021-10-19: R para Estadística Judicial: Reproducibilidad y Automatización, Taller de Capacitación, Junta Federal de Cortes y Superiores Tribunales de Justicia de las Provincias Argentinas [link](R para Estadística Judicial: Reproducibilidad y Automatización)
