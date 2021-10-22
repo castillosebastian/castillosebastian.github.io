@@ -1,5 +1,9 @@
 Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. Así que, va entonces, saldo algunas deudas.
 
+
+![](Rplot.png) 
+
+
 # Estadística y Justicia 
   - 2021-10-19: R para Estadística Judicial: Reproducibilidad y Automatización, Taller de Capacitación, Junta Federal de Cortes y Superiores Tribunales de Justicia de las Provincias Argentinas [link](R para Estadística Judicial: Reproducibilidad y Automatización)
   - 2021-06-23: Actividad Judicial en Pandemia, Poder Judicial de Entre Ríos. [link](https://www.jusentrerios.gov.ar/2021/06/23/en-pandemia-2-millones-de-actos-procesales-y-mas-de-790-mil-presentaciones-digitales/)
