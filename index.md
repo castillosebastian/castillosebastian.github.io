@@ -1,5 +1,4 @@
-Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Por mi parte todo lo que sé lo recibí de otros y espero devolver el favor. Así que, va entonces, saldo algunas deudas.
-
+Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Mi trabajo y pasión es investigar así que lo que encontrarás acá habla de eso y combina *machine learning* y *epistemología*. Con gusto seguimos la charla por correo. 
 
 ![](Rplot.png) 
 <center>[Análisis en el Poder Judicial](https://bitbucket.org/apgye/apgyeinformes/src/master/)</center>
@@ -24,6 +23,6 @@ Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas
 [link](https://castillocs.shinyapps.io/shiny_app/)    
 
 # Sobre mi
-[linkedin](www.linkedin.com/in/castillocs) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/)  castilloclaudiosebastian@gmail.com
+[linkedin](www.linkedin.com/in/castillocs) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/) ***castilloclaudiosebastian@gmail.com***
 
 
