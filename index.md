@@ -23,6 +23,6 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 [link](https://castillocs.shinyapps.io/shiny_app/)    
 
 # Sobre mi
-[linkedin](www.linkedin.com/in/castillocs) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/) ***castilloclaudiosebastian@gmail.com***
+[linkedin](https://www.linkedin.com/in/castillocs/) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/) . ***castilloclaudiosebastian@gmail.com***
 
 

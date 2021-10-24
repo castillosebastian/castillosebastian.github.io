@@ -11,8 +11,10 @@ df <- stringi::stri_list2matrix(fileList, byrow=TRUE)
 df = as.data.frame(df)
 df <- df %>% 
   filter(!str_detect(V1, "DESCRIPT|NAMESPACE"))
-
+docs = tibble(nrow(df))
+# Save df
 write.table(df, "~/castillosebastian_io/data/doc_apgyeinformes.csv", col.names = T, row.names = F, sep = ",")
+write.table(docs, "~/castillosebastian_io/data/nrowdocs.csv", col.names = T, row.names = F, sep = ",")
 
 # Plot network
 #https://www.r-graph-gallery.com/248-igraph-plotting-parameters.html
