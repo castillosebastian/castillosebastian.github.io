@@ -1,7 +1,7 @@
-Hola, soy Sebastián Castillo gracias por visitarme. Espero que algunas de estas ideas te sirvan de inspiración. Mi trabajo y pasión es investigar así que lo que encontrarás acá habla de eso y combina *machine learning* y *epistemología*. Con gusto seguimos la charla por correo. 
+Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas ideas te sirvan de inspiración. Trabajo constestando preguntas que suponen investigar datos (a veces grandes y otras pequeños), identificando relaciones, patrones y modelos que nos ayudan a entender un problema. En este blog incluyo partes de ese trabajo y cosas que me han ayudado en realizarlo. Si tenés alguna consulta, y ya que has llegado hasta acá, con gusto te contesto por correo. 
 
 ![](Rplot.png) 
-*<center>Mi trabajo en una red: estos son los documentos analíticos creados en el Poder Judicial</center>*
+*<center>Mi trabajo en una red: estos son los 3500+ documentos analíticos creados en el Poder Judicial</center>*
 
 # Estadística y Justicia 
   - 2021-10-19: R para Estadística Judicial: Reproducibilidad y Automatización, Taller de Capacitación, Junta Federal de Cortes y Superiores Tribunales de Justicia de las Provincias Argentinas [link](R para Estadística Judicial: Reproducibilidad y Automatización)

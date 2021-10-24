@@ -12,6 +12,8 @@ df = as.data.frame(df)
 df <- df %>% 
   filter(!str_detect(V1, "DESCRIPT|NAMESPACE"))
 
+write.table(df, "~/castillosebastian_io/data/doc_apgyeinformes.csv", col.names = T, row.names = F, sep = ",")
+
 # Plot network
 #https://www.r-graph-gallery.com/248-igraph-plotting-parameters.html
 g <- graph.data.frame(df, directed = FALSE)
