@@ -15,8 +15,7 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 - 2020-05-06: Informe: Presupuesto Prcial. sobre Bs.y Serv. STJER. [link](https://drive.google.com/file/d/14pbTFr4qBbKwVwLTbpM9WzfIr63yKXqh/view?usp=sharing)
 - 2020-03-12: Informe:Duración de Procesos Civiles, STJER. [link](https://drive.google.com/file/d/1VLJP9UX7cxu-3FzoRY_jjYSn_4oVSc7K/view?usp=sharing)
 - 2020-03-03: **Artículo**: Estadística Pública y Administración de Justicia, Medium.[link](https://medium.com/@castilloclaudiosebastian/estad%C3%ADstica-p%C3%BAblica-y-administraci%C3%B3n-de-justicia-d33141da0708)
-- 2019-12-01: Informe: Sumario Estadístico 2018-2019, STJER. [link](https://drive.google.com/file/d/1UR95d93EFhNWeW38pGzx6zSLcbY4PzGz/view?usp=sharing)
-- 2019-11-15: **Gift**: Sentencias Dictadas y duración, STJER. [link](https://drive.google.com/file/d/1ETwDzllG3T_bi3o84HN6GJu6xkou6VUH/view?usp=sharing)   
+- 2019-12-01: Informe: Sumario Estadístico 2018-2019, STJER. [link](https://drive.google.com/file/d/1UR95d93EFhNWeW38pGzx6zSLcbY4PzGz/view?usp=sharing)  
 
 # Aprendizaje Automático, Modelos Estadísticos y NLP
 - 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
