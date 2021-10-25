@@ -1,4 +1,4 @@
-Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas ideas te sirvan de inspiración. Trabajo constestando preguntas que suponen investigar datos (a veces grandes y otras pequeños), identificando relaciones, patrones y modelos que nos ayudan a entender un problema. En este blog incluyo parte de ese trabajo y cosas que me han ayudado en realizarlo. Si tenés alguna consulta, y ya que llegaste hasta acá, con gusto te contesto por correo. 
+Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas ideas te sirvan de inspiración. Trabajo constestando preguntas que suponen investigar datos (a veces grandes y otras pequeños), identificando relaciones, patrones y modelos que nos ayudan a entender un problema. En este blog incluyo parte de ese trabajo y cosas que me ayudaron en realizarlo. Si tenés alguna consulta, y ya que llegaste hasta acá, con gusto te contesto por correo. 
 
 ![](Rplot.png) 
 *<center>Mi trabajo en una red: estos son los 3500+ documentos analíticos creados en el Poder Judicial</center>*
