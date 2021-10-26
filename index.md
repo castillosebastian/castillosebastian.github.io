@@ -3,7 +3,15 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 ![](Rplot.png) 
 *<center>Mi trabajo en una red: estos son los 3500+ documentos analíticos creados en el Poder Judicial</center>*
 
-# Estadística y Justicia 
+# Apuntes sobre Aprendizaje Automático, Modelos Estadísticos y NLP
+
+- 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
+- 2020-04-10: Legal Corpus from Supreme Court of Buenos Aires, Argentina. [link](https://github.com/castillosebastian/legal_corpus) 
+- 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
+- 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
+- 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)
+
+# Información sobre Estadística y Justicia 
 - 2021-10-19: **Taller**: R para Estadística Judicial: Reproducibilidad y Automatización, JUFEJUS. [link](https://rpubs.com/ClaudioSebastianCastillo/824728)
 - 2021-08-18: Informe: Análisis de Competencia:Juicios Ejecutivos, STJER. [link](https://drive.google.com/file/d/1dDFNL4FuZXTbRgkgeCCqwdbIs-ReQAsE/view?usp=sharing)
 - 2021-06-23: **Video**: Actividad Judicial en Pandemia, Poder Judicial de Entre Ríos. [link](https://www.jusentrerios.gov.ar/2021/06/23/en-pandemia-2-millones-de-actos-procesales-y-mas-de-790-mil-presentaciones-digitales/)
@@ -16,13 +24,6 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 - 2020-03-12: Informe:Duración de Procesos Civiles, STJER. [link](https://drive.google.com/file/d/1VLJP9UX7cxu-3FzoRY_jjYSn_4oVSc7K/view?usp=sharing)
 - 2020-03-03: **Artículo**: Estadística Pública y Administración de Justicia, Medium.[link](https://medium.com/@castilloclaudiosebastian/estad%C3%ADstica-p%C3%BAblica-y-administraci%C3%B3n-de-justicia-d33141da0708)
 - 2019-12-01: Informe: Sumario Estadístico 2018-2019, STJER. [link](https://drive.google.com/file/d/1UR95d93EFhNWeW38pGzx6zSLcbY4PzGz/view?usp=sharing)  
-
-# Aprendizaje Automático, Modelos Estadísticos y NLP
-- 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
-- 2020-04-10: Legal Corpus from Supreme Court of Buenos Aires, Argentina. [link](https://github.com/castillosebastian/legal_corpus) 
-- 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
-- 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
-- 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)   
 
 # Aplicaciones    
 - 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
