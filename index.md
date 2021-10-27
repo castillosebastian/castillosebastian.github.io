@@ -15,6 +15,7 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 # Información sobre Estadística y Justicia 
 - 2021-10-19: **Taller**: R para Estadística Judicial: Reproducibilidad y Automatización, JUFEJUS. [link](https://rpubs.com/ClaudioSebastianCastillo/824728)
 - 2021-08-18: Informe: Análisis de Competencia:Juicios Ejecutivos, STJER. [link](https://drive.google.com/file/d/1dDFNL4FuZXTbRgkgeCCqwdbIs-ReQAsE/view?usp=sharing)
+- 2021-08-01: **Reportaje**: Cambio Tecnológico y Organización Judicial, STJER. [link](https://youtu.be/QHSPaQ5au_g)
 - 2021-06-23: **Video**: Actividad Judicial en Pandemia, Poder Judicial de Entre Ríos. [link](https://www.jusentrerios.gov.ar/2021/06/23/en-pandemia-2-millones-de-actos-procesales-y-mas-de-790-mil-presentaciones-digitales/)
 - 2021-06-09: Resumen Ejecutivo: Actividad durante Pandemia marzo-2020/mayo-2021 STJER. [link](https://drive.google.com/file/d/11LdFkg4uwNK5DbWMQxuX6xX4mhBN7isp/view?usp=sharing)
 - 2021-03-15: Informe: Datos sobre Narcomenudeo, STJER.[link](https://drive.google.com/file/d/139d_gQnthpbZq4YoCWSfMjBnaWXcHL94/view?usp=sharing) 
