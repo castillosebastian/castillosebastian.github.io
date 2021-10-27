@@ -10,6 +10,7 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 - 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
 - 2018-12-06: Qué y cómo aprenden las máquinas. [link](https://castillosebastian.github.io/epistemologia_formal/Qué-y-cómo-aprenden-las-redes-neuronales.html)
 - 2015-09-01: Epistemología Formal. [link](https://castillosebastian.github.io/epistemologia_formal/epistemología_formal.html)
+- [...]
 
 # Información sobre Estadística y Justicia 
 - 2021-10-19: **Taller**: R para Estadística Judicial: Reproducibilidad y Automatización, JUFEJUS. [link](https://rpubs.com/ClaudioSebastianCastillo/824728)
@@ -24,6 +25,7 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 - 2020-03-12: Informe:Duración de Procesos Civiles, STJER. [link](https://drive.google.com/file/d/1VLJP9UX7cxu-3FzoRY_jjYSn_4oVSc7K/view?usp=sharing)
 - 2020-03-03: **Artículo**: Estadística Pública y Administración de Justicia, Medium.[link](https://medium.com/@castilloclaudiosebastian/estad%C3%ADstica-p%C3%BAblica-y-administraci%C3%B3n-de-justicia-d33141da0708)
 - 2019-12-01: Informe: Sumario Estadístico 2018-2019, STJER. [link](https://drive.google.com/file/d/1UR95d93EFhNWeW38pGzx6zSLcbY4PzGz/view?usp=sharing)  
+- [...]
 
 # Aplicaciones    
 - 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
