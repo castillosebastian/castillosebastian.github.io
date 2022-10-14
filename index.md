@@ -3,8 +3,9 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 ![](Rplot.png) 
 *<center>Mi trabajo en una red: estos son los 3500+ documentos analíticos creados en el Poder Judicial</center>*
 
-# Apuntes sobre Aprendizaje Automático, Modelos Estadísticos y NLP
+# Apuntes sobre Aprendizaje Estadístico, Machine Learning y otras maravillas
 
+- 2022-10-14: Regresion Lineal Múltple [link](https://rpubs.com/cscastillo/956352)
 - 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
 - 2020-04-10: Legal Corpus from Supreme Court of Buenos Aires, Argentina. [link](https://github.com/castillosebastian/legal_corpus) 
 - 2019-01-10: Modelos de Lenguaje. [link](https://castillosebastian.github.io/NLP/Modelos_de_Lenguaje.html)
