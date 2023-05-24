@@ -3,13 +3,18 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 ![](Rplot.png) 
 *<center>Mi trabajo en una red: estos son los 3500+ documentos analíticos creados en el Poder Judicial</center>*
 
-# Apuntes sobre Machine Learning y otras maravillas
+![](airportmap.png)
+*<center>World Airport App</center>*
 
-- 2022-11-17: Una red neuronal parte por parte [link](https://medium.com/@castilloclaudiosebastian/redes-neuronales-entendiendo-el-n%C3%BAcleo-de-la-ia-4d0e59b7e47f)
-- 2022-11-01: Modelos Predictivos en la justicia 1: *Feature Engineering* [link](https://rpubs.com/ClaudioSebastianCastillo/964233) 
-- 2022-11-01: Modelos Predictivos en la justicia 2: *Workflows* [link](https://rpubs.com/ClaudioSebastianCastillo/963182)
-- 2022-11-01: Modelos Predictivos en la justicia 3: *Hyperparameter Tuning* [link](https://rpubs.com/ClaudioSebastianCastillo/963694)
-- 2022-11-01: Modelos Predictivos en la justicia 4: *Ensambles y Meta-learners* [link](https://rpubs.com/ClaudioSebastianCastillo/964231)
+# Aplicaciones    
+- 2023-04-01 *World Airports*, UTN-Vis project, [link](https://airportworlwide.herokuapp.com/)
+- 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
+- 2019-01-10 *Word Predictor App*: algoritmo para procesamiento predictivo de próxima palabra. 
+[link](https://castillocs.shinyapps.io/shiny_app/)   
+
+
+# Apuntes sobre Aprendizaje Estadístico, Machine Learning y otras maravillas
+
 - 2022-10-14: Regresion Lineal Múltple [link](https://rpubs.com/cscastillo/956352)   
 - 2022-07-12: Predicción de Clientes Bancarios - Informe Final [link](https://rpubs.com/cscastillo/923903)   
 - 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
@@ -35,12 +40,8 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 - 2019-12-01: Informe: Sumario Estadístico 2018-2019, STJER. [link](https://drive.google.com/file/d/1UR95d93EFhNWeW38pGzx6zSLcbY4PzGz/view?usp=sharing)  
 - [...]
 
-# Aplicaciones    
-- 2019-11-01 *Tableros Públicos de Estadística*, Poder Judicial de Entre Ríos, Argentina [link](https://tablero.jusentrerios.gov.ar/)     
-- 2019-01-10 *Word Predictor App*: algoritmo para procesamiento predictivo de próxima palabra. 
-[link](https://castillocs.shinyapps.io/shiny_app/)    
-
 # Sobre mi
 [linkedin](https://www.linkedin.com/in/castillocs/) - [github](https://github.com/castillosebastian) - [bitbucket](https://bitbucket.org/apgye/) . ***castilloclaudiosebastian@gmail.com***
+
 
 
