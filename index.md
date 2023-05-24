@@ -15,6 +15,11 @@ Hola, soy Sebastián Castillo gracias por visitarme, espero que algunas de estas
 
 # Apuntes sobre Aprendizaje Estadístico, Machine Learning y otras maravillas
 
+- 2022-11-17: Una red neuronal parte por parte [link](https://medium.com/@castilloclaudiosebastian/redes-neuronales-entendiendo-el-n%C3%BAcleo-de-la-ia-4d0e59b7e47f)
+- 2022-11-01: Modelos Predictivos en la justicia 1: *Feature Engineering* [link](https://rpubs.com/ClaudioSebastianCastillo/964233) 
+- 2022-11-01: Modelos Predictivos en la justicia 2: *Workflows* [link](https://rpubs.com/ClaudioSebastianCastillo/963182)
+- 2022-11-01: Modelos Predictivos en la justicia 3: *Hyperparameter Tuning* [link](https://rpubs.com/ClaudioSebastianCastillo/963694)
+- 2022-11-01: Modelos Predictivos en la justicia 4: *Ensambles y Meta-learners* [link](https://rpubs.com/ClaudioSebastianCastillo/964231)
 - 2022-10-14: Regresion Lineal Múltple [link](https://rpubs.com/cscastillo/956352)   
 - 2022-07-12: Predicción de Clientes Bancarios - Informe Final [link](https://rpubs.com/cscastillo/923903)   
 - 2020-04-12: NLP for legal text: first steps (on google colab notebook) [link](https://colab.research.google.com/drive/1n_X-r1mXG5Z0VBkOHC9AtjO1lyY-kSpl)
